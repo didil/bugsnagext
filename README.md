@@ -47,10 +47,10 @@ func main() {
 Logging handled errors in goroutines is transparent to the application code. But in order to log goroutines info properly during a goroutine's panic, you currently have to add `defer bugsnag.Recover(ctx)` at the beginning of the goroutine, otherwise the info about the other running goroutines is not registered. I couldn't yet find a way to make this work while being completely transparent to the application code. example:
 ```
 go func() {
-	// recover and log eventual panic
-	defer bugsnag.Recover(ctx)
+    // recover and log eventual panic
+    defer bugsnag.Recover(ctx)
 
-	MyFunction()
+    MyFunction()
 }()
 ```
 
