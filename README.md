@@ -1,6 +1,8 @@
 ## Bugsnag Ext
 bugsnag-go library extension to add goroutines stacktraces to an error event 
 
+[![Build Status](https://travis-ci.org/didil/bugsnagext.svg?branch=master)](https://travis-ci.org/didil/bugsnagext)
+
 ### Run tests
 ```
 $ make test

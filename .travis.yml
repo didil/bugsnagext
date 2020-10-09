@@ -1,6 +1,6 @@
 language: go
 
-sudo: false
+os: linux
 dist: focal
 
 branches:
