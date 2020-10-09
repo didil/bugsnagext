@@ -1,0 +1,6 @@
+.vscode
+*.code-workspace
+.idea
+.~lock*
+.DS_Store
+bin/
