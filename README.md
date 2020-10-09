@@ -26,8 +26,8 @@ Run `bugsnagext.RegisterGoroutinesInfoCallBack()` before your `bugsnag.Configure
 ```
 import (
 ...
-	"github.com/bugsnag/bugsnag-go"
-	"github.com/didil/bugsnagext"
+    "github.com/bugsnag/bugsnag-go"
+    "github.com/didil/bugsnagext"
 ...
 )
 
