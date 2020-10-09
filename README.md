@@ -32,8 +32,8 @@ import (
 )
 
 func main() {
-	// register goroutines info callback
-	bugsnagext.RegisterGoroutinesInfoCallBack()
+    // register goroutines info callback
+    bugsnagext.RegisterGoroutinesInfoCallBack()
     // configure bugsnag
     bugsnag.Configure(bugsnag.Configuration{
         ...
