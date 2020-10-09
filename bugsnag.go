@@ -28,10 +28,11 @@ func RegisterGoroutinesInfoCallBack() {
 	})
 }
 
-var cleanupRegx = regexp.MustCompile(`goroutine \d+ \[\w+\]:`)
+var goroutineHeaderRegex = regexp.MustCompile(`goroutine \d+ \[\w+\]:`)
 
 func cleanupStackTrace(stackTrace string) string {
-	res := cleanupRegx.FindAllStringIndex(stackTrace, 2)
+	// find 2 first headers
+	res := goroutineHeaderRegex.FindAllStringIndex(stackTrace, 2)
 
 	// only 1 goroutine running
 	if len(res) < 2 {
